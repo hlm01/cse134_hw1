@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Labs | Henry's Website</title>
+    <link rel="icon" type="image/x-icon" href="media/favicon.ico">
+    <style>
+        canvas {
+            border: 1px solid;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li>Education</li>
+            <li>Skills</li>
+            <li>Experience</li>
+            <li><a href="labs.html">Labs</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <h1>Labs</h1>
+</header>
+
+<main>
+    <h2>Contents</h2>
+    <ol>
+        <li>code</li>
+        <li>iframe</li>
+        <li>audio</li>
+        <li>video</li>
+        <li>canvas</li>
+        <li>svg</li>
+        <li>table</li>
+    </ol>
+    <div>
+        <h2>Code</h2>
+        <pre>
+        Here is some
+                C    O     D     E  :
+    </pre>
+        <code>print("hello world")</code>
+    </div>
+    <h2>iframe</h2>
+    <iframe src="https://ucsd.edu/" title="UCSD" height="300" width="400"></iframe>
+
+    <h2>audio test</h2>
+    <audio controls src="media/piano.mp3"></audio>
+    <h2>video test</h2>
+    <video controls src="media/typing.mp4" width=420 height=300></video>
+
+    <h2>canvas</h2>
+    <canvas id="canvas"></canvas>
+    <script>
+        const canvas = document.getElementById('canvas')
+        const ctx = canvas.getContext('2d')
+        ctx.fillStyle = 'red'
+        ctx.fillRect(20, 20, 50, 50)
+    </script>
+    <h2>SVG</h2>
+    <svg height="100" width="200">
+        <circle cx="80" cy="20" r="20"></circle>
+    </svg>
+</main>
+</body>
+</html>
